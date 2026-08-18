@@ -1,0 +1,76 @@
+.headerBar {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 1000;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 64px;
+  padding: 8px 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.05);
+}
+
+.myLogoContainer {
+  height: 40px;
+  max-height: 100%;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.myLogo {
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.listItems {
+  color: #1e1e1e;
+  font-size: 16px;
+}
+
+.listItems:hover {
+  text-shadow: 0.75px 0px 0px currentColor;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .headerBar {
+    height: 60px;
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .headerBar {
+    height: 56px;
+    padding: 8px 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerBar {
+    height: 48px;
+    padding: 8px 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .headerBar {
+    height: 48px;
+    padding: 8px 24px;
+  }
+
+  .listItems {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+}
