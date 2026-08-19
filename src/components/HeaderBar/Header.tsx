@@ -1,5 +1,5 @@
 import React from "react";
-import { UnstyledButton, Image } from "@mantine/core";
+import { Image } from "@mantine/core";
 import { navItems } from "./headerContent";
 import styles from "./Header.module.css";
 import myLogo from "../../assets/logos/myLogo.png";
@@ -8,13 +8,22 @@ export default function Header() {
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     href: string,
-  ) => {};
+  ) => {
+    e.preventDefault();
+    const section = document.getElementById(href);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header className={styles.headerBar}>
-      <UnstyledButton className={styles.myLogoContainer}>
-        <Image src={myLogo} className={styles.myLogo}/>
-      </UnstyledButton>
+      <a
+        className={styles.myLogoContainer}
+        onClick={(e) => handleNavClick(e, "hero")}
+      >
+        <Image src={myLogo} className={styles.myLogo} />
+      </a>
       <nav>
         <ul
           style={{
@@ -27,7 +36,13 @@ export default function Header() {
         >
           {navItems.map((item) => (
             <li key={item.label}>
-              <a className={styles.listItems}>{item.label}</a>
+              <a
+                className={styles.listItems}
+                href={`#${item.href}`}
+                onClick={(e) => handleNavClick(e, item.href)}
+              >
+                {item.label}
+              </a>
             </li>
           ))}
         </ul>
