@@ -1,3 +1,48 @@
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fcfcfa;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+  gap: 128px;
+}
+
+@media (max-width: 1200px) {
+  .app-container {
+    padding: 60px 0;
+    gap: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-container {
+    padding: 56px 0;
+    gap: 112px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 48px 0;
+    gap: 96px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-container {
+    padding: 48px 0;
+    gap: 48px;
+  }
+
+}
+
+@media (max-width: 360px) {
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -167,7 +212,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;

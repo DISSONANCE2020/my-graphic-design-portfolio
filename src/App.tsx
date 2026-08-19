@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MantineProvider } from "@mantine/core";
 import Header from "./components/HeaderBar/Header";
+import Hero from "./components/HeroSection/Hero";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
@@ -11,20 +12,9 @@ function App() {
 
   return (
     <MantineProvider>
-      <div
-        className="app-background"
-        style={{
-          minHeight: "100vh",
-          width: "100%",
-          backgroundColor: "#fcfcfa",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Header />
+      <Header />
+      <div className="app-container">
+        <Hero />
         <section id="center">
           <div className="hero">
             <img
