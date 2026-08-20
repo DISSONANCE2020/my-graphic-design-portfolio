@@ -1,4 +1,3 @@
-import React from "react";
 import { Image } from "@mantine/core";
 import heroImage from "../../assets/heroSection/heroImage.png";
 import { description } from "./heroContent"
