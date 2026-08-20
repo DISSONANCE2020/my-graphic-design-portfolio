@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MantineProvider } from "@mantine/core";
 import Header from "./components/HeaderBar/Header";
 import Hero from "./components/HeroSection/Hero";
+import Software from "./components/SoftwareSection/Software";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <div className="app-container">
         <Hero />
+        <Software />
         <section id="center">
           <div className="hero">
             <img

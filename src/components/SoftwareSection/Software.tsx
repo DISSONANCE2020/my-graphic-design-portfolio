@@ -1,0 +1,16 @@
+import { Image } from "@mantine/core";
+import styles from "./Software.module.css";
+import { header, logos } from "./softwareContent";
+
+export default function Software() {
+  return (
+    <section id="software" className={styles.softwareContainer}>
+      <div className={styles.headerText}>{header.text}</div>
+      <div className={styles.logoContainer}>
+        {logos.map((logo) => (
+            <img src={logo.url} alt={logo.alt}  className={styles.logo}/>
+        ))}
+      </div>
+    </section>
+  );
+}
