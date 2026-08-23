@@ -1,5 +1,5 @@
 import { Image } from "@mantine/core";
-import heroImage from "../../assets/heroSection/heroImage.png";
+import heroImage from "../../../assets/heroSection/heroImage.png";
 import { description } from "./heroContent"
 import styles from "./Hero.module.css";
 

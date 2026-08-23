@@ -2,11 +2,11 @@ import React from "react";
 import { Image } from "@mantine/core";
 import { navItems } from "./headerContent";
 import styles from "./Header.module.css";
-import myLogo from "../../assets/logos/myLogo.png";
+import myLogo from "../../../assets/logos/myLogo.png";
 
 export default function Header() {
   const handleNavClick = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    e: React.MouseEvent<HTMLAnchorElement>,
     href: string,
   ) => {
     e.preventDefault();

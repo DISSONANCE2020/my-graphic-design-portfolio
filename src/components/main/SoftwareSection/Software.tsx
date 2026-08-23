@@ -8,7 +8,9 @@ export default function Software() {
       <div className={styles.headerText}>{header.text}</div>
       <div className={styles.logoContainer}>
         {logos.map((logo) => (
-            <img src={logo.url} alt={logo.alt}  className={styles.logo}/>
+          <div key={logo.id} className={styles.logoWrapper}>
+            <img src={logo.url} alt={logo.alt} className={styles.logo} />
+          </div>
         ))}
       </div>
     </section>

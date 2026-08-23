@@ -1,8 +1,8 @@
-import  photoshopLogo  from "../../assets/softwareSection/photoshopLogo.png"
-import  illustratorLogo  from "../../assets/softwareSection/illustratorLogo.png"
-import affinityLogo  from "../../assets/softwareSection/affinityLogo.png"
-import canvaLogo  from "../../assets/softwareSection/canvaLogo.png"
-import figmaLogo  from "../../assets/softwareSection/figmaLogo.png"
+import  photoshopLogo  from "../../../assets/softwareSection/photoshopLogo.png"
+import  illustratorLogo  from "../../../assets/softwareSection/illustratorLogo.png"
+import affinityLogo  from "../../../assets/softwareSection/affinityLogo.png"
+import canvaLogo  from "../../../assets/softwareSection/canvaLogo.png"
+import figmaLogo  from "../../../assets/softwareSection/figmaLogo.png"
 
 
 export const header = {

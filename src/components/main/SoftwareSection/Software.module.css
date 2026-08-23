@@ -14,6 +14,14 @@
   color: #1e1e1e;
 }
 
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+}
+
 .logoContainer {
   display: flex;
   flex-direction: row;
