@@ -7,34 +7,34 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  padding: 64px 0;
+  padding: 64px;
   gap: 128px;
 }
 
 @media (max-width: 1200px) {
   .app-container {
-    padding: 60px 0;
+    padding: 60px;
     gap: 120px;
   }
 }
 
 @media (max-width: 992px) {
   .app-container {
-    padding: 56px 0;
+    padding: 56px;
     gap: 112px;
   }
 }
 
 @media (max-width: 768px) {
   .app-container {
-    padding: 48px 0;
+    padding: 48px;
     gap: 96px;
   }
 }
 
 @media (max-width: 576px) {
   .app-container {
-    padding: 48px 0;
+    padding: 48px 24px;
     gap: 48px;
   }
 
