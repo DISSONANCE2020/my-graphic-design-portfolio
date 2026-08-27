@@ -1,0 +1,256 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 128px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  padding: 64px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+}
+
+.leftContainer {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #fcfcfa;
+  border: 1px solid #cdcdcd;
+  padding: 16px 0px 0px 0px;
+}
+
+.myPhoto {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 32px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  gap: 32px;
+  height: auto;
+}
+
+.headerContainer {
+  display: flex;
+  flex: 1;
+  height: auto;
+}
+
+.headerTextContainer {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: #b90000;
+}
+
+.headerText {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.headerImageContainer {
+  display: none;
+}
+
+.descriptionText {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  text-align: left;
+  gap: 16px;
+  height: auto;
+  font-size: 16px;
+}
+
+.musicContainer {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+}
+
+.playButtonContainer {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: #0019b9;
+  aspect-ratio: 1/1;
+}
+
+.playButton {
+  color: #ffffff;
+}
+
+.playButton:hover {
+  stroke: #ffffff;
+}
+
+.songContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  background-color: #ffffff;
+  border: 1px solid #0019b9;
+  height: auto;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 12px;
+}
+
+.songTitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0019b9;
+}
+
+.songArtist {
+  font-size: 12px;
+  color: #0019b9;
+}
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    gap: 120px;
+    min-height: 600px;
+    padding: 30px;
+  }
+
+  .rightContainer {
+    flex: 1;
+    gap: 30px;
+  }
+
+  .textContainer {
+    gap: 30px;
+  }
+
+  .descriptionText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutContainer {
+    gap: 64px;
+    min-height: 480px;
+    padding: 28px;
+  }
+
+  .rightContainer {
+    gap: 28px;
+  }
+
+  .textContainer {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    min-height: 420px;
+    padding: 24px;
+  }
+
+  .leftContainer {
+    display: none;
+  }
+
+  .rightContainer {
+    gap: 24px;
+  }
+
+  .headerContainer {
+    gap: 24px;
+  }
+
+  .headerTextContainer {
+    padding: 12px;
+  }
+
+  .headerImageContainer {
+    display: flex;
+    max-height: 64px;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    background-color: #fcfcfa;
+    border: 1px solid #cdcdcd;
+    padding: 4px 0px 0px 0px;
+  }
+
+  .headerTextContainer {
+    flex: 6;
+  }
+
+  .textContainer {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutContainer {
+    min-height: 360px;
+    padding: 20px;
+  }
+
+  .rightContainer {
+    gap: 20px;
+  }
+
+  .headerContainer {
+    gap: 20px;
+  }
+
+  .textContainer {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutContainer {
+    min-height: 320px;
+    padding: 16px;
+  }
+
+  .rightContainer {
+    gap: 20px;
+  }
+
+  .textContainer {
+    gap: 20px;
+  }
+
+  .songTitle {
+    font-size: 10px;
+  }
+
+  .songArtist {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .musicContainer {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+  }
+}
