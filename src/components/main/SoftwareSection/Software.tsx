@@ -1,4 +1,3 @@
-import { Image } from "@mantine/core";
 import styles from "./Software.module.css";
 import { header, logos } from "./softwareContent";
 
