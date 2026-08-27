@@ -56,13 +56,15 @@
 }
 
 @media (max-width: 768px) {
-
   .buttonContainer {
     height: 48px;
   }
 }
 
 @media (max-width: 576px) {
+  .gridContainer {
+    gap: 8px;
+  }
 
   .imageFrame {
     padding: 4px;
@@ -74,5 +76,4 @@
 }
 
 @media (max-width: 360px) {
-
 }
