@@ -21,7 +21,7 @@ export const accordionData = [
   },
   {
     label: "Project Minimum",
-    description: "PHP 6,000 project minimum.",
+    description: "Project minimum will depend on the nature of the project, this is subject to discussion.",
   },
   {
     label: "Am I looking for full-time employment?",
